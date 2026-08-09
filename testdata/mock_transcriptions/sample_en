@@ -1,1 +1,6 @@
-
+{
+    "transcript": "Hello, this is a mock transcription for testing.",
+    "detected_language": "en",
+    "audio_duration": 5.2,
+    "provider": "mock"
+}
