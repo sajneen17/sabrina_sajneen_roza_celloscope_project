@@ -1,0 +1,18 @@
+
+
+
+
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=development
+      - TRANSCRIPTION_PROVIDER=mock
+      - OCR_PROVIDER=mock
+      - MAX_FILE_SIZE_MB=25
+    volumes:
+      - ./testdata:/app/testdata
